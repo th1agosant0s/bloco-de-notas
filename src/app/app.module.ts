@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { CorpoComponent } from './componentes/corpo/corpo.component';
 import { NotaComponent } from './nota/nota.component';
+import { AdicionarNotasComponent } from './componentes/adicionar-notas/adicionar-notas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     CorpoComponent,
-    NotaComponent
+    NotaComponent,
+    AdicionarNotasComponent
   ],
   imports: [
     BrowserModule,
