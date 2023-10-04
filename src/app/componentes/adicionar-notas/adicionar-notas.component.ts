@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NotaService } from '../nota.service';
+import { Nota } from '../nota';
 
 @Component({
   selector: 'app-adicionar-notas',
@@ -12,7 +13,7 @@ export class AdicionarNotasComponent {
 
 
   nota: Nota= {
-    titulo: '',
+  
     conteudo: '',
     tipo: 'tipo1'
   }

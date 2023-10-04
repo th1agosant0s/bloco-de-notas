@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { Nota } from ''
+import { Nota } from './nota'
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -23,7 +23,18 @@ return this.http.post<Nota>(this.API,nota)
 
   }
 
+  buscarPorId(id: number): Observable<Nota> {
+    const url = `${this.API}/${id}`
+    return this.http.get<Nota>(url)
+ 
+
+  }
+
+  excluir(id: number): Observable<Nota> {
+    const url = `${this.API}/${id}`
+    return this.http.delete<Nota>(url)
+
   }
 
 
-
+}
