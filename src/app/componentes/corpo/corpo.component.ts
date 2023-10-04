@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NotaService } from '../nota.service';
+import { Nota } from '../nota';
 
 @Component({
   selector: 'app-corpo',
@@ -15,12 +16,6 @@ export class CorpoComponent {
   }
 
   
-  listaNotas=[
-    {
-      titulo: "Titulo",
-      conteudo: "Conteudo Teste",
-      tipo: "tipo2"
-    }
-  ]
+  listaNotas:Nota[]=[];
 
 }

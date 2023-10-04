@@ -19,7 +19,7 @@ const routes: Routes = [
   pathMatch: 'full',
 },
 {
-  path: 'ExcluirNotaComponent/:id',
+  path: 'excluir-nota/:id',
   component:ExcluirNotaComponent,
 }
 

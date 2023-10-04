@@ -12,25 +12,22 @@ export class ExcluirNotaComponent {
 
 
   constructor(
-private router: Router,
-private service: NotaService,
-private route: ActivatedRoute
-
+    private router: Router,
+    private service: NotaService,
+    private route: ActivatedRoute
   ) {}
 
   nota: Nota = {
     id: 0,
     conteudo:"",
-    tipo: "tipo1",
-
-
+    tipo: "tipo1"
   }
 
   ngOnInit(): void{
     const id = this.route.snapshot.paramMap.get('id')
-    this.service.buscarPorId(parseInt(id!)).subscribe((nota)) =>{
+    this.service.buscarPorId(parseInt(id!)).subscribe((nota) =>{
       this.nota = nota
-    }
+    })
   }
 
 cancelar(){
